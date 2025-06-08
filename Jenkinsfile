@@ -27,7 +27,7 @@ pipeline {
      stage('Deploy') {
             steps {
                script {
-                   def dockerrm = 'sudo docker rm -f My-first-containe2211 || true'
+                   def dockerrm = 'sudo docker rm -f My-first-containe11 || true'
                     def dockerCmd = 'sudo docker run -itd --name My-first-containe11 -p 8083:80 harshaldixit999/akshatnewimg6july:v1'
                     sshagent(['sshkeypair']) {
                         //chnage the private ip in below code
